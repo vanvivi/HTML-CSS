@@ -1,5 +1,5 @@
 body{
-	background-color: #F5F0DC;
+	background-color:#FF4C65;
 	font-family: Helvetica, Arial, sans-serif;
 	width:940px;
 	margin-right:auto;
@@ -10,23 +10,27 @@ body{
 }
 h2{
 	background-color: #B3A742;/* Na propriedade linear-gradient informamos 3 valores: o primeiro, top, indica onde o degradê começa e sua direção, o segundo, #9C8F67, indica qual a cor de início do degradê, e o terceiro, #C7BE9B, indica a cor que termina o degradê.*/
-	background:-webkit-linear-gradient(top,#9C8F67,#C7BE9B 30%); /* in this line we are getting 30% of the h2 colour)*/
+	background:-webkit-linear-gradient(top,#FFFFFF,#111111 50%); /* in this line we are getting 30% of the h2 colour)*/
 	/* para funcionar no google chrome eh webkit, para funcuinar no firefox eh o-linear, para mozila eh -moz-*/
 	border-radius: 15px; /* bordas arredondada*/
-	border: 1px solid black;/* cor das bordas arredondada*/
+	border: 3px solid #4A665E;/* cor das bordas arredondada*/
 	padding-top:5px;
-	padding-left:5px;
+	font-size: 18px;
+	padding-left:20px;
 	padding-bottom:5px;
 	padding-right:5px;
 	color:#FFFFFF;
 }
 figure{
-	background-color:white;
+	background-color:#FFBD71;
 	width:400px;
+	margin-right:auto;
+	margin-left:auto;
 	text-align: center;
+	font-size: 18px;
 	padding:15px; /*margem interna*/
 	font-family: 'Comic Sans MS',cursive;
-	border: 1px solid black;
+	border: 1px solid pink;
 	box-shadow: 5px 5px 3px rgba(0,0,0,0.7);
 	/* -webkit-transform:rotate(-5deg); ao inves de fazer a fgura rotacionar aqui criamos em outra funcao*/
 
@@ -34,7 +38,7 @@ figure{
 /* nesta funcao abaixo a imagem vai girar assim que passarmos o mouse*/
 figure:hover{
 	text-decoration: underline;
-	-webkit-transform:rotate(-5deg);
+	-webkit-transform:rotate(-10deg);
 }
 #tb-nutrientes{
 	width:40%;
