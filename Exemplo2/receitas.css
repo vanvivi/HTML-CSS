@@ -8,10 +8,35 @@ body{
 #titulo{
 	text-align: center
 }
+
+#banner{/* banner can be found on ribbon images. A imagem sempre ficara a esquerda pq eh padrao html mas podemos modificar usando position absolute
+	 */
+	top:0;
+	right: 0;
+	position:absolute;/*O absolute eh sempre em relacao ao elemento pai que nesse caso deveria ser a tag ul ou html que eh pai de todas as tags abaixo dele, sendo assim a imagem flutua conforme mexemos a barra de rolagem.*/
+	position:fixed;/* a imagem ficara estatica mesmo mexendo a bara de rolagem */
+}
+
 nav{ /* o elemento float faz com que o menu fique a esquerda sem empurrar ou sobrepor outros elementos*/
 	width:200px;
 	float:left;
 }
+nav ul li{ /* ALTERANDO AS configuracoes dos links do menu*/
+	background-color: #C7BE9B;
+	margin-bottom: 3px;
+}
+nav ul li a{/* ALTERANDO AS cores dos links do menu*/
+	text-decoration: none;
+	color:black;
+}
+nav ul{/* removendo os bullets dos links do menu*/
+	list-style: none;
+	padding-left: 0; /* removendo o espaco deixado ao remover os bullets dos links do menu*/
+}
+nav ul li:hover{/*altera a cor de fundo do menu quando o mouse passar por cima*/	
+background-color: #9C8F67;
+}
+
 h2{
 	background-color: #B3A742;/* Na propriedade linear-gradient informamos 3 valores: o primeiro, top, indica onde o degradê começa e sua direção, o segundo, #9C8F67, indica qual a cor de início do degradê, e o terceiro, #C7BE9B, indica a cor que termina o degradê.*/
 	background:-webkit-linear-gradient(top,#FFFFFF,#111112 50%); /* in this line we are getting 30% of the h2 colour)*/
