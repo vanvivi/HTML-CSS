@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #verde {
+                background-color: green;
+                width: 700px;
+                height: 500px;
+                position: absolute;
+
+            }
+            #azul {
+                background-color: blue;
+                width: 500px;
+                height: 400px;
+                position: absolute;
+            }
+            #amarela {
+                background-color: yellow;
+                width: 300px;
+                height: 300px;
+                position:absolute;
+                top: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="verde">
+            <div id="azul">
+                <div id="amarela"></div>
+            </div>
+        </div>
+    </body>
+</html>
+<!--Se abrirmos agora a página no navegador, veremos que a div amarela está no canto superior direito, mas ela está ignorando os limites da div verde, e com isso ficou posicionada no canto superior direito em relação ao browser, e não à div verde.
+
+Isto ocorreu pois configuramos para que o tipo de posicionamento da div amarela fosse absolute, e conforme explicado na aula, o absolute é em relação ao primeiro elemento pai que tenha o tipo de posicionamento diferente de static.
+
+Como a div azul e a div verde tem posicionamento static (que é o padrão se não mudarmos nada), o absolute acaba sendo referente ao browser. Porém se alterarmos o tipo de posicionamento da div verde, o absolute da amarela passará a ser correspondente à div verde.
+
+#verde {
+    background-color: green;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+}
+Agora faça com que a div amarela fique no canto superior direito da div azul, ou seja, a div amarela deverá permanecer dentro dos limites da div azul.-->

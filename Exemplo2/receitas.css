@@ -21,12 +21,12 @@ nav{ /* o elemento float faz com que o menu fique a esquerda sem empurrar ou sob
 	width:200px;
 	float:left;
 }
-nav ul li{ /* ALTERANDO AS configuracoes dos links do menu*/
+nav ul li{ /* ALTERANDO AS configuracoes E COR DE FUNDO dos ITENS do menu*/
 	background-color: #C7BE9B;
 	margin-bottom: 3px;
 }
 nav ul li a{/* ALTERANDO AS cores dos links do menu*/
-	text-decoration: none;
+	text-decoration: none; /*remove o sublinhado dos itens do menu*/
 	color:black;
 }
 nav ul{/* removendo os bullets dos links do menu*/
@@ -36,6 +36,7 @@ nav ul{/* removendo os bullets dos links do menu*/
 nav ul li:hover{/*altera a cor de fundo do menu quando o mouse passar por cima*/	
 background-color: #9C8F67;
 }
+/*hover is a pseudo-classes*/
 
 h2{
 	background-color: #B3A742;/* Na propriedade linear-gradient informamos 3 valores: o primeiro, top, indica onde o degradê começa e sua direção, o segundo, #9C8F67, indica qual a cor de início do degradê, e o terceiro, #C7BE9B, indica a cor que termina o degradê.*/
@@ -90,7 +91,7 @@ figure:hover{
 /* a tag li coloca os dados sempre em lista na vertical,
  utilizando o codigo abaixo com tag nav podemos deixar 
  os dados alinhados*/
-/* REMOVING this part od the code to do another position for the  menu.
+/* REMOVING this part of the code to do another position for the  menu.
 deixando na vertical.
 nav ul li{
 	display:inline;
